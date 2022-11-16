@@ -40,7 +40,7 @@ class Main(Frame):
             self.formula = ""
         elif operation == "DEL":
             self.formula = self.formula[0:-1]
-        elif operation == "X^2":
+        elif operation == "x^2":
             self.formula = str((eval(self.formula))**2)
         elif operation == "=":
             self.formula = str(eval(self.formula))
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     root = Tk()
     root["bg"] = "#000"
     root.geometry("485x550+200+200")
-    root.title("Калькулятор")
+    root.title("Calculator")
     root.resizable(False, False)
     app = Main(root)
     app.pack()
